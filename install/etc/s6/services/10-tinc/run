@@ -45,6 +45,8 @@ if [ ! -f /tmp/state/10-tinc ]; then
 	    git add .
 	    git commit -m "${NODE} - Reinitialized `date +%Y%m%d-%H%M%S`"
 	    git push
+	else
+	    echo 'There seems to be a network already...'
 	fi
 
 		# Set Runtime Configuration for Tinc
